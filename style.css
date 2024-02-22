@@ -23,10 +23,10 @@
 body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
+  background-color: var(--Verydarkblue);
 }
 
-.workCard {
- 
+.profileCard {
   border-radius: 20px;
   display: flex;
   width: 350px;
@@ -34,6 +34,56 @@ body {
   flex-direction: row;
   justify-content: end;
   position: relative;
+  margin: 6rem auto 0 auto;
+}
+.profileDetails {
+  width: 350px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  bottom: 4rem;
+  background: var(--Darkblue);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 1rem;
+  color: #fff;
+}
+.circle {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.circle img {
+  width: 93%;
+}
+.profileDetails span {
+  font-size: 1.5rem;
+}
+.report {
+  color: #fff;
+  position: absolute;
+  bottom: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  left: 20%;
+}
+.workCard {
+  border-radius: 20px;
+  display: flex;
+  width: 350px;
+  height: 150px;
+  flex-direction: row;
+  justify-content: end;
+  position: relative;
+  margin-bottom: 4rem;
   margin: 4rem auto;
 }
 .workCard img {
