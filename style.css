@@ -26,7 +26,7 @@ body {
 }
 
 .workCard {
-  background-color: var(--LightOrrange);
+ 
   border-radius: 20px;
   display: flex;
   width: 350px;
@@ -34,7 +34,7 @@ body {
   flex-direction: row;
   justify-content: end;
   position: relative;
-  margin: 2rem auto;
+  margin: 5rem auto;
 }
 .workCard img {
   opacity: 0.5;
@@ -54,17 +54,18 @@ body {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .workNtime {
   color: #fff;
   font-size: 18px;
+  justify-self: left;
 }
 .weeklyTime {
+  justify-self: right;
   color: var(--PaleBlue);
-  text-align: end;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: .6rem;
-  justify-items: end;
+}
+.weeklyTime img {
+  margin-bottom: 1rem;
 }
