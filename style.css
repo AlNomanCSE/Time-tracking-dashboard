@@ -34,7 +34,7 @@ body {
   flex-direction: row;
   justify-content: end;
   position: relative;
-  margin: 5rem auto;
+  margin: 4rem auto;
 }
 .workCard img {
   opacity: 0.5;
