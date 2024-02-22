@@ -26,96 +26,143 @@ body {
   background-color: var(--Verydarkblue);
 }
 
-.profileCard {
-  border-radius: 20px;
-  display: flex;
-  width: 350px;
-  height: 150px;
-  flex-direction: row;
-  justify-content: end;
-  position: relative;
-  margin: 6rem auto 0 auto;
-}
-.profileDetails {
-  width: 350px;
-  height: 150px;
-  position: absolute;
-  left: 0;
-  bottom: 4rem;
-  background: var(--Darkblue);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  gap: 1rem;
-  color: #fff;
-}
-.circle {
-  width: 70px;
-  height: 70px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.circle img {
-  width: 93%;
-}
-.profileDetails span {
-  font-size: 1.5rem;
-}
-.report {
-  color: #fff;
-  position: absolute;
-  bottom: 1.3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
-  left: 20%;
-}
-.workCard {
-  border-radius: 20px;
-  display: flex;
-  width: 350px;
-  height: 150px;
-  flex-direction: row;
-  justify-content: end;
-  position: relative;
-  margin-bottom: 4rem;
-  margin: 4rem auto;
-}
-.workCard img {
-  opacity: 0.5;
-  height: 40%;
-  padding-right: 1rem;
-}
+@media screen and (width>700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .card {
+    padding: 5%;
+    height: 700px;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(268px,1fr)); */
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+      "a b c d"
+      "a e f g";
+    gap: 1rem;
+    margin: 0 0;
+  }
 
-.cardDetails {
-  width: 350px;
-  height: 150px;
-  position: absolute;
-  top: 3rem;
-  left: 0;
-  background: var(--Darkblue);
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  padding: 0 2rem;
-}
+  .profileCard {
+    grid-area: a;
+    border-radius: 20px;
+    position: relative;
+  }
+  .profileDetails {
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .profileDetails p {
+    color: #fff;
+    font-size: 12px;
+  }
+  .profileDetails span {
+    font-size: 2rem;
+  }
+  .profileCard .report {
+    color: #fff;
+    padding: 1rem;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+  .circle {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .circle img {
+    width: 93%;
+  }
+  .work {
+    grid-area: b;
+    position: relative;
+    border-radius: 20px;
+  }
+  .work .cardDetails {
+    background-color: var(--Darkblue);
+    height: 70%;
+    border-radius: 20px;
+  }
+  .workCard {
+    position: relative;
+  }
+  .workCard img {
+    position: absolute;
+    height: 70px;
+    right: 2rem;
+  }
+  .workNtime {
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    line-height: 1.5;
+  }
+  .weeklyTime {
+    color: var(--PaleBlue);
+    position: absolute;
+    top: 100px;
+    left: 10px;
+  }
+  .weeklyTime img {
+    position: absolute;
+    left: 150px;
+    top: -60px;
+  }
 
-.workNtime {
-  color: #fff;
-  font-size: 18px;
-  justify-self: left;
-}
-.weeklyTime {
-  justify-self: right;
-  color: var(--PaleBlue);
-}
-.weeklyTime img {
-  margin-bottom: 1rem;
+  .play {
+    position: relative;
+    border-radius: 20px;
+    grid-area: c;
+  }
+  .cardDetails {
+    background-color: var(--Darkblue);
+    height: 70%;
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    top: 31%;
+  }
+  .cardDetails img {
+    width: 25px;
+    height: 5px;
+  }
+  .study {
+    position: relative;
+    border-radius: 20px;
+    grid-area: d;
+  }
+
+  .exercise {
+    position: relative;
+    border-radius: 20px;
+    grid-area: e;
+  }
+
+  .social {
+    position: relative;
+    border-radius: 20px;
+    grid-area: f;
+  }
+
+  .selfCare {
+    position: relative;
+    border-radius: 20px;
+    grid-area: g;
+  }
 }
