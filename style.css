@@ -26,7 +26,7 @@ body {
   background-color: var(--Verydarkblue);
 }
 
-@media screen and (700px>=width) {
+@media screen and (880px>=width) {
   .card {
     width: 100vw;
   }
@@ -86,14 +86,41 @@ body {
     margin: 1rem auto;
     width: 300px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .workCardPC > img {
+    height: 50px;
+    width: 50px;
+    align-self: flex-end;
+    margin-right: 1rem;
   }
   .cardDetailsPC {
+    height: 120px;
     border-radius: 20px;
     background-color: var(--Darkblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    color: #fff;
+    line-height: 1.8;
+  }
+  .weeklyTimePC {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .weeklyTimePC > img {
+    align-self: flex-end;
+    height: 5px;
+    width: 20px;
   }
 }
 
-@media screen and (width>700px) {
+@media screen and (width>880px) {
   body {
     display: flex;
     flex-direction: column;
